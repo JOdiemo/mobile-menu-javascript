@@ -12,12 +12,14 @@ body {
 }
 
 .Top {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .Top a {
@@ -29,6 +31,7 @@ body {
 .logo {
   text-decoration: none;
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #6070ff;
   cursor: pointer;
@@ -51,23 +54,24 @@ nav ul {
 }
 
 nav {
-  margin-right: 30px;
   padding-right: 5px;
   padding-top: 10px;
 }
 
 .menu-list.active {
+  position: absolute;
   scale: 100%;
   display: flex;
   flex-direction: column;
-  position: absolute;
   margin-left: -0.1px;
   top: -0.1px;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   transition: all 0.3s ease-in-out;
   background: rgba(96, 112, 255, 0.8);
   backdrop-filter: blur(5px);
+  overflow: hidden;
+  right: 0;
 }
 
 section {
@@ -95,6 +99,8 @@ section {
 
 .navigation {
   display: block;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 li:hover {
@@ -124,11 +130,11 @@ li:hover {
 }
 
 .navigation.active .bar:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .navigation.active .bar:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .works {
@@ -503,6 +509,7 @@ input[type=email] {
   font-size: 32px;
   line-height: 44px;
   text-align: left;
+  font-family: "Poppins", sans-serif;
 }
 
 .menu-list.active ul li a:hover {
@@ -527,11 +534,12 @@ input[type=email] {
 
   .menu-list {
     display: block;
-    margin-right: 4%;
+    width: 100vw;
     transition-property: width;
     transition-duration: 2s;
     transition-timing-function: linear;
     transition-delay: 1s;
+    background-size: cover;
   }
 
   .menu-list ul {
@@ -548,6 +556,7 @@ input[type=email] {
     text-decoration: none;
     list-style: none;
     display: inline-block;
+    font-family: "Poppins", sans-serif;
   }
 
   .menu-list.active ul li:hover {
