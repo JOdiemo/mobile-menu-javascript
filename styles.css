@@ -506,15 +506,6 @@ input[type=email] {
   text-align: left;
 }
 
-.menu-list.active ul li a:hover {
-  .menu-list.active ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 4%;
-    margin-top: 80px;
-  }
-
   .menu-list.active ul li a {
     text-decoration: none;
     color: #fff;
