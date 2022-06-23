@@ -95,6 +95,7 @@ section {
 
 .navigation {
   display: block;
+  
 }
 
 li:hover {
@@ -529,10 +530,8 @@ input[type=email] {
     transition: 1s;
     cursor: pointer;
   }
-}
 
-
-/* ----------media part---------- */
+  /* ----------media part---------- */
 
 @media only screen and (min-width: 768px) {
   .navigation {
