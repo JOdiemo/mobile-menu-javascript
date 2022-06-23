@@ -95,7 +95,6 @@ section {
 
 .navigation {
   display: block;
-  
 }
 
 li:hover {
@@ -506,23 +505,14 @@ input[type=email] {
   text-align: left;
 }
 
-  .menu-list.active ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
-    text-align: left;
-  }
+.menu-list.active ul li a:hover {
+  transform: translate(0, -1px);
+  text-decoration: underline;
+  transition: 1s;
+  cursor: pointer;
+}
 
-  .menu-list.active ul li a:hover {
-    transform: translate(0, -1px);
-    text-decoration: underline;
-    transition: 1s;
-    cursor: pointer;
-  }
-
-  /* ----------media part---------- */
+/* ----------media part---------- */
 
 @media only screen and (min-width: 768px) {
   .navigation {
